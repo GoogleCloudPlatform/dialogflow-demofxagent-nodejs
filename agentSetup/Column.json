@@ -1,0 +1,46 @@
+{
+  "id": "bc09b593-dbee-4b7f-aab1-2eecdde84975",
+  "name": "Column",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Ask",
+      "synonyms": [
+        "Ask"
+      ]
+    },
+    {
+      "value": "spread",
+      "synonyms": [
+        "spread"
+      ]
+    },
+    {
+      "value": "mvmt",
+      "synonyms": [
+        "mvmt",
+        "movement"
+      ]
+    },
+    {
+      "value": "SPOT",
+      "synonyms": [
+        "SPOT"
+      ]
+    },
+    {
+      "value": "Bid",
+      "synonyms": [
+        "Bid"
+      ]
+    },
+    {
+      "value": "Mid",
+      "synonyms": [
+        "Mid"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": true
+}

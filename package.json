@@ -1,0 +1,23 @@
+{
+  "name": "fxhub",
+  "description": "Example application.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^0.12.0",
+    "@google-cloud/pubsub": "^0.18.0",
+    "body-parser": "^1.15.2",
+    "dialogflow": "^0.1.0",
+    "express": "^4.16.1",
+    "express-basic-auth": "^1.1.4",
+    "firebase-admin": "~5.5.1",
+    "firebase-functions": "^0.7.1",
+    "googleapis": "21.2",
+    "semistandard": "^12.0.1"
+  },
+  "private": true,
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}

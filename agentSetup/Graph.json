@@ -1,0 +1,941 @@
+{
+  "id": "77df52d1-7b84-4aa7-b8b9-3b7557216a76",
+  "name": "Graph",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.graph",
+      "affectedContexts": [
+        {
+          "name": "Graph",
+          "parameters": {},
+          "lifespan": 5
+        },
+        {
+          "name": "Graph-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "43b813fc-0d43-48ad-90d8-c74b309df104",
+          "required": true,
+          "dataType": "@Currency",
+          "name": "Currency",
+          "value": "$Currency",
+          "prompts": [
+            "Which currencies would you like to graph?",
+            "Whats your choice of currency?"
+          ],
+          "isList": true
+        },
+        {
+          "id": "6b05acd3-e7f2-4a43-85f4-bbca4bb8b3fd",
+          "required": false,
+          "dataType": "@Column",
+          "name": "Column",
+          "value": "$Column",
+          "prompts": [
+            "What columns would you like to use for your Graph?",
+            "And what columns do you like today?"
+          ],
+          "isList": true
+        },
+        {
+          "id": "85a04935-7845-43dd-91b4-a2449cfaff3d",
+          "required": false,
+          "dataType": "@sys.date-period",
+          "name": "date-period",
+          "value": "$date-period",
+          "prompts": [
+            "What date would you like the graph to start from?"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1519817698,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "155f568c-fa2a-4619-a151-395f88666b41",
+      "data": [
+        {
+          "text": "Show me graph "
+        },
+        {
+          "text": "of",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "swedish krona",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "4f2aa3bb-7113-4495-a3fd-a8e7c58ab66f",
+      "data": [
+        {
+          "text": "graph "
+        },
+        {
+          "text": "me",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "swissy",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "euro",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8304c131-fbfc-44ff-995f-5c08c8853d4a",
+      "data": [
+        {
+          "text": "show me the "
+        },
+        {
+          "text": "Japanese Yen",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " against the "
+        },
+        {
+          "text": "US dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "82cb7315-0cd4-45df-b618-1b99e6282a85",
+      "data": [
+        {
+          "text": "show me "
+        },
+        {
+          "text": "swissy",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "euro",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " with columns "
+        },
+        {
+          "text": "spread",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "mid",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "last month",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "cc640f56-296d-45ec-a491-2adc95c3a06e",
+      "data": [
+        {
+          "text": "graph "
+        },
+        {
+          "text": "aussie",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8ecf8a82-22f1-450c-8fe7-e87467a5c957",
+      "data": [
+        {
+          "text": "give me "
+        },
+        {
+          "text": "Swiss",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "596f3bc1-9040-4bd4-87ae-9d29b335c801",
+      "data": [
+        {
+          "text": "graph "
+        },
+        {
+          "text": "JPN",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "CHF",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " using columns "
+        },
+        {
+          "text": "realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "from last month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "2d9ed2cd-855a-42df-9946-112aefbbc1d1",
+      "data": [
+        {
+          "text": "Graph "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "JPY and",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "  "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "EUR",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "7627a8f5-b999-4bca-949f-3d53e6d188e2",
+      "data": [
+        {
+          "text": "show me "
+        },
+        {
+          "text": "swissy",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "euro",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " with columns "
+        },
+        {
+          "text": "spread",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "mid",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        },
+        {
+          "text": " for "
+        },
+        {
+          "text": "last month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "8ef2fae9-4410-438a-b03a-caeef8e701a0",
+      "data": [
+        {
+          "text": "show me ",
+          "userDefined": false
+        },
+        {
+          "text": "Aussie dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0bcd8f50-61dd-42dc-92fa-f2a14ef6f8dc",
+      "data": [
+        {
+          "text": "show me graph "
+        },
+        {
+          "text": "of",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "gbp",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5bbfddef-9f5d-41a5-9ef6-ff1635bb5a37",
+      "data": [
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "013d9a2d-6a1a-4245-87b5-6fa9d159e80d",
+      "data": [
+        {
+          "text": "what was the FX rate for "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " versus the "
+        },
+        {
+          "text": "pound sterling",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " on to "
+        },
+        {
+          "text": "2 1 2018",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518659374,
+      "isAuto": false
+    },
+    {
+      "id": "3e17428d-1c2e-495b-98f5-4184e35c30d6",
+      "data": [
+        {
+          "text": "Graph "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "be896508-cb97-47d0-9fad-e725f3cf7f68",
+      "data": [
+        {
+          "text": "graph "
+        },
+        {
+          "text": "me",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Yen",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " vs "
+        },
+        {
+          "text": "swissy",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "59337d2b-af97-4a89-a11c-e5b59b83d648",
+      "data": [
+        {
+          "text": "Show me "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "fff19000-a1a7-46c4-8437-2c53973ca258",
+      "data": [
+        {
+          "text": "Give me a graph of "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " against "
+        },
+        {
+          "text": "JPY",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "e8f2a193-b908-4d13-94f8-eeac3c03f1f9",
+      "data": [
+        {
+          "text": "graph "
+        },
+        {
+          "text": "yen",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " versus "
+        },
+        {
+          "text": "dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "663437d4-b3b8-4af3-86da-577276363878",
+      "data": [
+        {
+          "text": "Create a graph of "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": "  using columns  "
+        },
+        {
+          "text": "realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "pure realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518659374,
+      "isAuto": false
+    },
+    {
+      "id": "3dac1f99-4048-4f59-bd83-dbffdf9b0a94",
+      "data": [
+        {
+          "text": "Create a graph of "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "  "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "   using columns  "
+        },
+        {
+          "text": "realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "pure realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "07361b9d-a19e-4a4e-a924-5023bad2bbd0",
+      "data": [
+        {
+          "text": "graph me "
+        },
+        {
+          "text": "swissy",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "yen",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        },
+        {
+          "text": " with "
+        },
+        {
+          "text": "columns",
+          "meta": "@sys.ignore",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "spread",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "0395a352-a208-4e15-8358-578066197390",
+      "data": [
+        {
+          "text": "Create a graph of "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "  "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "   using columns  "
+        },
+        {
+          "text": "realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "pure realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "59787228-fca7-43bd-88b1-bcb73abad639",
+      "data": [
+        {
+          "text": "Sterling",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": " versus "
+        },
+        {
+          "text": "dollar",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "eae2a2a6-6613-477c-9fb6-e70bfa30e580",
+      "data": [
+        {
+          "text": "Give me a graph of  "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    },
+    {
+      "id": "6564a1d5-6560-4d77-9b21-ff8bb5733333",
+      "data": [
+        {
+          "text": "Create a graph of "
+        },
+        {
+          "text": "GBP",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "  "
+        },
+        {
+          "text": "USD",
+          "alias": "Currency",
+          "meta": "@Currency",
+          "userDefined": true
+        },
+        {
+          "text": "  using columns  "
+        },
+        {
+          "text": "realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " and "
+        },
+        {
+          "text": "pure realized volatility",
+          "alias": "Column",
+          "meta": "@Column",
+          "userDefined": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "from last month",
+          "alias": "date-period",
+          "meta": "@sys.date-period",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1518658561,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "templates": []
+}

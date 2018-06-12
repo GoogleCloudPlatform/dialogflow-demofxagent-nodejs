@@ -1,0 +1,25 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: fxhubtester
+spec:
+  template:
+    metadata:
+      labels:
+        app: fxhubtester
+    spec:
+      volumes:
+      - name: google-cloud-key
+        secret:
+          secretName: fx-demo-key
+      containers:
+      - name: fxhubtester
+        image: gcr.io/<project>/fxhub:v1
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: google-cloud-key
+          mountPath: /var/secrets/google
+        env:
+        - name: GOOGLE_APPLICATION_CREDENTIALS
+          value: /var/secrets/google/key.json

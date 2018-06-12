@@ -1,0 +1,63 @@
+{
+  "responseId": "XXXX",
+  "queryResult": {
+    "queryText": "Create a graph of GBP USD",
+    "action": "input.graph",
+    "parameters": {
+      "Currency": [
+        "GBP",
+        "USD"
+      ],
+      "Column": [],
+      "date-period": ""
+    },
+    "allRequiredParamsPresent": true,
+    "outputContexts": [
+      {
+        "name": "projects/xxxx/agent/sessions/xxxx/contexts/graph-followup",
+        "lifespanCount": 2,
+        "parameters": {
+          "Currency.original": [
+            "GBP",
+            "USD"
+          ],
+          "Column": [],
+          "Column.original": "",
+          "date-period": "",
+          "date-period.original": "",
+          "Currency": [
+            "GBP",
+            "USD"
+          ]
+        }
+      },
+      {
+        "name": "projects/xxxx/agent/sessions/xxxx/contexts/graph",
+        "lifespanCount": 5,
+        "parameters": {
+          "Currency.original": [
+            "GBP",
+            "USD"
+          ],
+          "Column": [],
+          "Column.original": "",
+          "date-period": "",
+          "date-period.original": "",
+          "Currency": [
+            "GBP",
+            "USD"
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/xxxx/agent/intents/xxxx",
+      "displayName": "Graph"
+    },
+    "intentDetectionConfidence": 0.85,
+    "diagnosticInfo": {
+      "webhook_latency_ms": 5000
+    },
+    "languageCode": "en"
+  }
+}
