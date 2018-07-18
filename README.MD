@@ -162,7 +162,7 @@ You can now open http://<Kubernetes service IP> in your browser and start asking
 
 #### Running sample on the cloud
 
-curl -X POST http://localhost:8080/queryDialogflowWithUserUtterance  -H "Content-Type: application/json" -u hub:<password> -d "{\"query\":\"Graph me euro dollar\"}"
+curl -X POST http://localhost:8080/queryDialogflowWithUserUtterance  -H "Content-Type: application/json" -u hub:<password> -d '{\"query\":\"Graph me euro dollar\"}'
 
 ## Known limitations
 
